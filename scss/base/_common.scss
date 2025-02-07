@@ -1,0 +1,157 @@
+section {
+	position: relative;
+}
+
+// Text ========================================================================================================================================================
+h1 {
+	font-weight: 400;
+	font-size: 80px;
+	// line-height: 80px;
+	line-height: 100%;
+
+	// @include responsive-auto(font-size, (55, 24), (1439.98, 1169.98, 991.98));
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 50px;
+	// line-height: 55px;
+	line-height: 110%;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 40px;
+	// line-height: 44px;
+	line-height: 110%;
+}
+
+h4 {
+	font-weight: 400;
+	font-size: 30px;
+	// line-height: 33px;
+	line-height: 110%;
+}
+
+h5 {
+	font-weight: 400;
+	font-size: 22px;
+	// line-height: 24px;
+	line-height: 110%;
+}
+
+h6 {
+	font-weight: 400;
+	font-size: 14px;
+	// line-height: 15px;
+	line-height: 110%;
+}
+
+p {
+	font-weight: 400;
+	font-size: 16px;
+	// line-height: 22px;
+	line-height: 140%;
+	letter-spacing: 0.03em;
+	color: #60617d;
+}
+
+// Button ========================================================================================================================================================
+.rs-btn {
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	z-index: 10;
+	transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+
+	font-family: "Onest", sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: #fff;
+	padding: 20px 40px;
+	gap: 10px;
+	border: 1px solid transparent;
+	border-radius: 38px;
+
+	&._btn-primary {
+		background-color: var(--primary-color);
+
+		&::after {
+			background-color: var(--second-color);
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				border-color: var(--second-color) !important;
+			}
+		}
+	}
+
+	&._btn-second {
+		background-color: var(--second-color);
+
+		&::after {
+			background-color: var(--primary-color);
+
+			@media (any-hover: hover) {
+				&:hover {
+					border-color: var(--primary-color) !important;
+				}
+			}
+		}
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		opacity: 0;
+		transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+		z-index: -1;
+	}
+
+	@keyframes spin {
+		0% {
+			transform: rotate(0deg);
+		}
+
+		25% {
+			transform: rotate(-8deg);
+		}
+
+		50% {
+			transform: rotate(0deg);
+		}
+
+		75% {
+			transform: rotate(8deg);
+		}
+
+		100% {
+			transform: rotate(0deg);
+		}
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			svg {
+				animation: spin 1s linear infinite;
+			}
+
+			&::after {
+				width: 500px;
+				height: 500px;
+				opacity: 1;
+			}
+		}
+	}
+}
