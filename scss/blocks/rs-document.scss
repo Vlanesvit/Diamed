@@ -1,17 +1,26 @@
+@import "../base/_mixin";
+
 .rs-document {
 	// .rs-document__container
 	&__container {
 		padding-top: 40px;
+
+		@include responsive-auto(padding-top, (40, 0), (1439.98, 1169.98, 991.98, 767.98));
 	}
 
 	&__wrapper {
-		padding: 30px;
-		border: 1px solid #dee7ed;
-		border-radius: 30px;
+		@media (min-width: 991.98px) {
+			padding: 30px;
+			border: 1px solid #dee7ed;
+			border-radius: 30px;
+		}
 	}
 
 	// .rs-document__slider
 	&__slider {
+		@media (max-width: 991.98px) {
+			overflow: visible;
+		}
 	}
 
 	// .rs-document__swiper
@@ -82,8 +91,24 @@
 		height: 100%;
 		z-index: 10;
 
+		@media (max-width: 1439.98px) {
+			padding: 24px;
+		}
+
+		@media (max-width: 1169.98px) {
+			padding: 16px;
+		}
+
 		.rs-document__slide-main & {
 			padding: 64px 40px;
+
+			@media (max-width: 1439.98px) {
+				padding: 24px;
+			}
+
+			@media (max-width: 1169.98px) {
+				padding: 16px;
+			}
 		}
 	}
 
@@ -118,6 +143,10 @@
 	&__elem {
 		position: absolute;
 		transition: opacity 0.3s ease 0s;
+
+		@media (max-width: 991.98px) {
+			display: none;
+		}
 
 		svg {
 			path {

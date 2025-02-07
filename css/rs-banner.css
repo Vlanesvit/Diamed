@@ -5,6 +5,16 @@
   padding-top: 74px;
   background-color: var(--primary-color);
 }
+@media (max-width: 991.98px) {
+  .rs-banner {
+    padding-top: 62px;
+  }
+}
+@media (max-width: 767.98px) {
+  .rs-banner {
+    padding-top: 60px;
+  }
+}
 .rs-banner__bg {
   position: absolute;
   top: 50%;
@@ -34,20 +44,32 @@
      object-fit: cover;
 }
 .rs-banner__container {
-  border-color: rgba(255, 255, 255, 0.3);
   height: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
   position: relative;
   z-index: 10;
 }
+@media (min-width: 991.98px) {
+  .rs-banner__container {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-banner__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 767.98px) {
+  .rs-banner__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
 .rs-banner__content {
   height: 100%;
-  border-radius: 30px;
-  position: relative;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,17 +84,171 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+@media (min-width: 991.98px) {
+  .rs-banner__content {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 60px;
+    border-radius: 30px;
+    position: relative;
+  }
+}
 .rs-banner__elem {
   position: absolute;
   z-index: -1;
+}
+.rs-banner__elem img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .rs-banner__elem-left {
   top: 0;
   left: 0;
 }
+@media (max-width: 1439.98px) {
+  .rs-banner__elem-left {
+    width: 334.235px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-banner__elem-left {
+    width: 309.47px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-banner__elem-left {
+    width: 284.705px;
+  }
+}
+@media (max-width: 767.98px) {
+  .rs-banner__elem-left {
+    width: 259.94px;
+  }
+}
+@media (max-width: 1439.98px) {
+  .rs-banner__elem-left {
+    height: 436.25px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-banner__elem-left {
+    height: 376.5px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-banner__elem-left {
+    height: 316.75px;
+  }
+}
+@media (max-width: 767.98px) {
+  .rs-banner__elem-left {
+    height: 257px;
+  }
+}
+@media (max-width: 1439.98px) {
+  .rs-banner__elem-left {
+    left: -39.75px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-banner__elem-left {
+    left: -79.5px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-banner__elem-left {
+    left: -119.25px;
+  }
+}
+@media (max-width: 767.98px) {
+  .rs-banner__elem-left {
+    left: -159px;
+  }
+}
 .rs-banner__elem-right {
   right: 0;
   bottom: 0;
+}
+@media (max-width: 1439.98px) {
+  .rs-banner__elem-right {
+    width: 500.855px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-banner__elem-right {
+    width: 465.71px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-banner__elem-right {
+    width: 430.565px;
+  }
+}
+@media (max-width: 767.98px) {
+  .rs-banner__elem-right {
+    width: 395.42px;
+  }
+}
+@media (max-width: 1439.98px) {
+  .rs-banner__elem-right {
+    height: 431px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-banner__elem-right {
+    height: 418px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-banner__elem-right {
+    height: 405px;
+  }
+}
+@media (max-width: 767.98px) {
+  .rs-banner__elem-right {
+    height: 392px;
+  }
+}
+@media (max-width: 1439.98px) {
+  .rs-banner__elem-right {
+    right: -55.5px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-banner__elem-right {
+    right: -111px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-banner__elem-right {
+    right: -166.5px;
+  }
+}
+@media (max-width: 767.98px) {
+  .rs-banner__elem-right {
+    right: -222px;
+  }
+}
+@media (max-width: 1439.98px) {
+  .rs-banner__elem-right {
+    bottom: -6.5px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-banner__elem-right {
+    bottom: -13px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-banner__elem-right {
+    bottom: -19.5px;
+  }
+}
+@media (max-width: 767.98px) {
+  .rs-banner__elem-right {
+    bottom: -26px;
+  }
 }
 .rs-banner__desc {
   color: #fff;

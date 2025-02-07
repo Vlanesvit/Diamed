@@ -78,18 +78,10 @@ function initSliders() {
 						spaceBetween: 20,
 					},
 					767.98: {
-						slidesPerView: 3,
-						spaceBetween: 20,
-					},
-					991.98: {
-						slidesPerView: 4,
+						slidesPerView: 2,
 						spaceBetween: 20,
 					},
 					1169.98: {
-						slidesPerView: 5,
-						spaceBetween: 20,
-					},
-					1439.98: {
 						slidesPerView: 3,
 						spaceBetween: 20,
 					},
@@ -171,18 +163,10 @@ function initSliders() {
 						spaceBetween: 20,
 					},
 					767.98: {
-						slidesPerView: 3,
-						spaceBetween: 20,
-					},
-					991.98: {
-						slidesPerView: 4,
+						slidesPerView: 2,
 						spaceBetween: 20,
 					},
 					1169.98: {
-						slidesPerView: 5,
-						spaceBetween: 20,
-					},
-					1439.98: {
 						slidesPerView: 3,
 						spaceBetween: 20,
 					},
@@ -256,24 +240,24 @@ function initSliders() {
 				// Брекпоинты (адаптив)
 				breakpoints: {
 					320: {
-						slidesPerView: 1.2,
-						spaceBetween: 16,
-					},
-					539.98: {
-						slidesPerView: 2,
-						spaceBetween: 20,
-					},
-					767.98: {
 						slidesPerView: 3,
 						spaceBetween: 20,
 					},
-					991.98: {
+					539.98: {
 						slidesPerView: 4,
-						spaceBetween: 20,
+						spaceBetween: 30,
+					},
+					767.98: {
+						slidesPerView: 6,
+						spaceBetween: 30,
+					},
+					991.98: {
+						slidesPerView: 6,
+						spaceBetween: 50,
 					},
 					1169.98: {
-						slidesPerView: 5,
-						spaceBetween: 20,
+						slidesPerView: 8,
+						spaceBetween: 50,
 					},
 					1439.98: {
 						slidesPerView: 8,
@@ -361,14 +345,10 @@ function initSliders() {
 						spaceBetween: 20,
 					},
 					991.98: {
-						slidesPerView: 4,
+						slidesPerView: 3,
 						spaceBetween: 20,
 					},
 					1169.98: {
-						slidesPerView: 5,
-						spaceBetween: 20,
-					},
-					1439.98: {
 						slidesPerView: 4,
 						spaceBetween: 20,
 					},

@@ -72,12 +72,29 @@ body {
 	// Ширина ограничивающего контейнера (ширина контейнера по макету + раддинги)
 	$paddingContainer: 20px;
 	$maxWidthContainer: calc(1804px + ($paddingContainer * 2));
-	border-left: 1px solid #dee7ed;
-	border-right: 1px solid #dee7ed;
 	max-width: $maxWidthContainer;
 	padding-left: $paddingContainer;
 	padding-right: $paddingContainer;
-	transition: border-color 0.3s ease 0s;
+
+	@media (min-width: 991.98px) {
+		border-left: 1px solid #dee7ed;
+		border-right: 1px solid #dee7ed;
+		transition: border-color 0.3s ease 0s;
+	}
+
+	@media (max-width: 991.98px) {
+		$paddingContainer: 36px;
+
+		padding-left: $paddingContainer;
+		padding-right: $paddingContainer;
+	}
+
+	@media (max-width: 767.98px) {
+		$paddingContainer: 16px;
+
+		padding-left: $paddingContainer;
+		padding-right: $paddingContainer;
+	}
 }
 
 // Вспомогательные классы ======================================================================================================================================================================================================================

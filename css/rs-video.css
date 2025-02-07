@@ -3,10 +3,15 @@
   padding-bottom: 50px;
 }
 .rs-video__wrapper {
-  height: 510px;
+  padding-bottom: 11.4%;
   width: 100%;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 1439.98px) {
+  .rs-video__wrapper {
+    padding-bottom: 50%;
+  }
 }
 .rs-video__block {
   position: absolute;

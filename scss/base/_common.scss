@@ -9,7 +9,12 @@ h1 {
 	// line-height: 80px;
 	line-height: 100%;
 
-	// @include responsive-auto(font-size, (55, 24), (1439.98, 1169.98, 991.98));
+	@include responsive-auto(font-size, (80, 25), (1439.98, 1169.98, 991.98, 767.98));
+
+	@media (max-width: 991.98px) {
+		font-weight: 500;
+		line-height: 110%;
+	}
 }
 
 h2 {
@@ -19,6 +24,10 @@ h2 {
 	line-height: 110%;
 	margin-bottom: 50px;
 	padding-left: 33px;
+
+	@include responsive-auto(font-size, (50, 24), (1439.98, 1169.98, 991.98, 767.98));
+	@include responsive-auto(padding-left, (33, 10), (1439.98, 1169.98, 991.98, 767.98));
+	@include responsive-auto(margin-bottom, (50, 20), (1439.98, 1169.98, 991.98, 767.98));
 }
 
 h3 {
@@ -26,6 +35,8 @@ h3 {
 	font-size: 40px;
 	// line-height: 44px;
 	line-height: 110%;
+
+	@include responsive-auto(font-size, (40, 20), (1439.98, 1169.98, 991.98, 767.98));
 }
 
 h4 {
@@ -33,6 +44,8 @@ h4 {
 	font-size: 30px;
 	// line-height: 33px;
 	line-height: 110%;
+
+	@include responsive-auto(font-size, (30, 16), (1439.98, 1169.98, 991.98, 767.98));
 }
 
 h5 {
@@ -48,6 +61,8 @@ h6 {
 	// line-height: 15px;
 	line-height: 110%;
 	color: var(--primary-color);
+
+	@include responsive-auto(font-size, (14, 12), (1439.98, 1169.98, 991.98, 767.98));
 }
 
 p {
@@ -57,6 +72,8 @@ p {
 	line-height: 140%;
 	letter-spacing: 0.03em;
 	color: #60617d;
+
+	@include responsive-auto(font-size, (16, 14), (1439.98, 1169.98, 991.98, 767.98));
 }
 
 // Button ========================================================================================================================================================
@@ -79,6 +96,12 @@ p {
 	gap: 10px;
 	border: 1px solid transparent;
 	border-radius: 38px;
+
+	@include responsive-auto(font-size, (20, 14), (1439.98, 1169.98, 991.98, 767.98));
+	@include responsive-auto(padding-top, (20, 12), (1439.98, 1169.98, 991.98, 767.98));
+	@include responsive-auto(padding-right, (40, 16), (1439.98, 1169.98, 991.98, 767.98));
+	@include responsive-auto(padding-bottom, (20, 12), (1439.98, 1169.98, 991.98, 767.98));
+	@include responsive-auto(padding-left, (40, 16), (1439.98, 1169.98, 991.98, 767.98));
 
 	&._btn-primary {
 		background-color: var(--primary-color);

@@ -1,12 +1,17 @@
+@import "../base/_mixin";
+
 .rs-partners {
 	// .rs-partners__container
 	&__container {
 		padding-top: 90px;
+
+		@include responsive-auto(padding-top, (90, 50), (1439.98, 1169.98, 991.98, 767.98));
 	}
 
 	&__wrapper {
-		padding: 53px 30px;
-
+		@media (min-width: 1439.98px) {
+			padding: 53px 30px;
+		}
 	}
 
 	// .rs-partners__slider
@@ -23,8 +28,8 @@
 
 	// .rs-partners__item
 	&__item {
-		@media (any-hover: hover){
-			&:hover{
+		@media (any-hover: hover) {
+			&:hover {
 				.rs-partners__img {
 					img {
 						&:first-child {
