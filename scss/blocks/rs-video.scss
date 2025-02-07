@@ -7,14 +7,12 @@
 
 	// .rs-video__wrapper
 	&__wrapper {
-		padding-bottom: 11.4%;
+		height: 510px;
 		width: 100%;
 		position: relative;
 		overflow: hidden;
 
-		@media (max-width: 1439.98px){
-			  padding-bottom: 50%;
-		}
+		@include responsive-auto(height, (510, 300), (1439.98, 1169.98, 991.98, 767.98));
 	}
 
 	&__block {
