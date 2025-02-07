@@ -14,7 +14,7 @@
 		position: relative;
 		overflow: hidden;
 
-		@include responsive-auto(height, (510, 300), (1439.98, 1169.98, 991.98, 767.98));
+		@include responsive-auto(height, (510, 150), (1439.98, 1169.98, 991.98, 767.98));
 	}
 
 	&__block {
@@ -25,7 +25,7 @@
 		width: 30%;
 		height: 80%;
 		transform: translate(-50%, -50%) scale3d(0.2, 0.2, 1);
-		transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s !important;
+		transition: all 1s cubic-bezier(0.77, 0, 0.175, 1) 0s !important;
 		will-change: transform, width, height;
 
 		&.aos-animate {
