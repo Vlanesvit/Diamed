@@ -17,6 +17,8 @@ h2 {
 	font-size: 50px;
 	// line-height: 55px;
 	line-height: 110%;
+	margin-bottom: 50px;
+	padding-left: 33px;
 }
 
 h3 {
@@ -45,6 +47,7 @@ h6 {
 	font-size: 14px;
 	// line-height: 15px;
 	line-height: 110%;
+	color: var(--primary-color);
 }
 
 p {
@@ -96,12 +99,39 @@ p {
 
 		&::after {
 			background-color: var(--primary-color);
+		}
 
-			@media (any-hover: hover) {
-				&:hover {
-					border-color: var(--primary-color) !important;
+		@media (any-hover: hover) {
+			&:hover {
+				border-color: var(--primary-color) !important;
+			}
+		}
+	}
+
+	&._btn-white-border {
+		border-color: #fff;
+
+		&::after {
+			background-color: #fff;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				border-color: #fff !important;
+				color: var(--font-color);
+
+				svg {
+					path {
+						fill: var(--font-color);
+					}
 				}
 			}
+		}
+	}
+
+	svg {
+		path {
+			transition: fill 0.3s ease 0s;
 		}
 	}
 

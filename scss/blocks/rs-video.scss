@@ -1,0 +1,44 @@
+.rs-video {
+	// .rs-video__container
+	&__container {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	// .rs-video__wrapper
+	&__wrapper {
+		height: 510px;
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+	}
+
+	&__block {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 1;
+		width: 30%;
+		height: 80%;
+		transform: translate(-50%, -50%) scale3d(0.2, 0.2, 1);
+		transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s !important;
+		will-change: transform, width, height;
+
+		&.aos-animate {
+			width: 100%;
+			height: 100%;
+			transform: translate(-50%, -50%) scale3d(1, 1, 1);
+		}
+
+		img,
+		video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		border-radius: 1000px;
+		}
+	}
+}

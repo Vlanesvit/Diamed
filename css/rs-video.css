@@ -1,0 +1,40 @@
+.rs-video__container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.rs-video__wrapper {
+  height: 510px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.rs-video__block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 30%;
+  height: 80%;
+  -webkit-transform: translate(-50%, -50%) scale3d(0.2, 0.2, 1);
+          transform: translate(-50%, -50%) scale3d(0.2, 0.2, 1);
+  -webkit-transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s !important;
+  transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s !important;
+  will-change: transform, width, height;
+}
+.rs-video__block.aos-animate {
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate(-50%, -50%) scale3d(1, 1, 1);
+          transform: translate(-50%, -50%) scale3d(1, 1, 1);
+}
+.rs-video__block img,
+.rs-video__block video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1000px;
+}
