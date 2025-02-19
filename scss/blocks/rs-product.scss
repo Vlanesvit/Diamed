@@ -28,8 +28,8 @@
 
 	// .rs-product__slider
 	&__slider {
-		@media (max-width: 991.98px){
-			  overflow: visible;
+		@media (max-width: 991.98px) {
+			overflow: visible;
 		}
 	}
 
@@ -47,9 +47,12 @@
 		border: 1px solid #d9e2e8;
 		border-radius: 20px;
 		position: relative;
+		transition: border-color 0.3s ease 0s;
 
 		@media (any-hover: hover) {
 			&:hover {
+				border-color: var(--primary-color);
+				
 				.rs-product__elem-left {
 					svg {
 						path {

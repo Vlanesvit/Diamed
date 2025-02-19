@@ -53,8 +53,13 @@
   border: 1px solid #d9e2e8;
   border-radius: 20px;
   position: relative;
+  -webkit-transition: border-color 0.3s ease 0s;
+  transition: border-color 0.3s ease 0s;
 }
 @media (any-hover: hover) {
+  .rs-product__item:hover {
+    border-color: var(--primary-color);
+  }
   .rs-product__item:hover .rs-product__elem-left svg path {
     fill: var(--primary-color);
   }
